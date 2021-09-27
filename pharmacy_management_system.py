@@ -103,6 +103,14 @@ def login_sucess():
     messagebox.showinfo("Login","Login Success")
     login_page()
 
+#popup for password not recognised
+
+def password_not_recognised():
+    global password_not_recognised_screen
+    messagebox.showinfo("Incorrect", "Password Not Recognised")
+
+# popup for user not found
+
 
 # designing main window
 def main_account_screen():
