@@ -1,6 +1,6 @@
 #imports
 from tkinter import *
-from PIL import Image,ImageTk
+
 from tkinter import ttk
 import sqlite3
 from tkinter import messagebox
@@ -30,3 +30,13 @@ c.execute(""" CREATE TABLE addresses(
 ) """)
 '''
 
+root = Toplevel()
+root.title("Pharmacy Management System")
+root.iconbitmap('pill.png')
+root.geometry("1280x680")
+
+# top title
+title = Label(root, text="Pharmacy Management System", bg="black", fg="red", font=("Bradley Hand ITC", 50, "bold"))
+title.pack(side=TOP, fill=X, padx=10, pady=10)
+
+mainloop()
