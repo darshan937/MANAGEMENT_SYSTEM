@@ -77,6 +77,24 @@ def register_user():
 
     messagebox.showinfo("Success","Registration Success")
 
+def login_verify():
+    username1 = username_verify.get()
+    password1 = password_verify.get()
+    username_login_entry.delete(0, END)
+    password_login_entry.delete(0, END)
+
+    list_of_files = os.listdir()
+    if username1 in list_of_files:
+        file1 = open(username1, "r")
+        verify = file1.read().splitlines()
+        if password1 in verify:
+            login_sucess()
+
+        else:
+            password_not_recognised()
+
+    else:
+        user_not_found()
 
 
 # designing main window
