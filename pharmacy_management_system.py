@@ -101,7 +101,9 @@ def login_verify():
 def login_sucess():
     global login_success_screen
     messagebox.showinfo("Login","Login Success")
+
     login_page()
+
 
 #popup for password not recognised
 
@@ -127,7 +129,6 @@ def delete_password_not_recognised():
 
 def delete_user_not_found():
     user_not_found_screen.destroy()
-
 
 
 
@@ -157,3 +158,8 @@ def main_account_screen():
     btn.place(x=0, y=38)
 
     main_screen.mainloop()
+
+
+
+
+main_account_screen()

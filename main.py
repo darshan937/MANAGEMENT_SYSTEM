@@ -145,7 +145,7 @@ def login_page():
 
         editor = Tk()
         editor.title('Update Data')
-        editor.geometry('600x600')
+        editor.geometry('400x400')
 
         # Create a databases or connect to one
         conn = sqlite3.connect('address_book1.db')
