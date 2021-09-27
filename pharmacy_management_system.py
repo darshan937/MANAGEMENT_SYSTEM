@@ -63,6 +63,20 @@ def login():
     Label(login_screen, text="").pack()
     Button(login_screen, text="Login", width=10, height=1, font=("Times", "12", "bold"),command=login_verify).pack()
 
+def register_user():
+    username_info = username.get()
+    password_info = password.get()
+
+    file = open(username_info, "w")
+    file.write(username_info + "\n")
+    file.write(password_info)
+    file.close()
+
+    username_entry.delete(0, END)
+    password_entry.delete(0, END)
+
+    messagebox.showinfo("Success","Registration Success")
+
 
 
 # designing main window
