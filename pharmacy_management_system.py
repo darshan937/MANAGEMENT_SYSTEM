@@ -111,6 +111,10 @@ def password_not_recognised():
 
 # popup for user not found
 
+def user_not_found():
+    global user_not_found_screen
+    messagebox.showinfo("Not found","User not found")
+
 
 # designing main window
 def main_account_screen():
